@@ -1,0 +1,637 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Manto Vilčinsko 2016 — 2020 metų veiklos ataskaita</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="758d1dce-1449-4098-af6f-5b53f04e9ea3" class="page serif"><header><div class="page-header-icon undefined"><img class="icon" src="Manto%20Vil%20insko%202016%202020%20met%20veiklos%20ataskaita%20ddcab4a04b944ee7ac4bbe6e58ca3a77/new.png"/></div><h1 class="page-title">Manto Vilčinsko 2016 — 2020 metų veiklos ataskaita</h1></header><div class="page-body"><p id="49e109ca-627a-4f46-ba94-2a70a3e59448" class="">Aš, Mantas Vilčinskas, ketverių metų savo veiklą skirstau į kelias kategorijas. Gimnazijoje tobulėjau, gilinausi ne tik į mokomuosius dalykus (istoriją, lietuvių kalbą ir literatūrą, anglų kalbą), bet skyriau laiko ir savo hobi (kūrybai ir technologijoms). Manau, kad per šį laikotarpį įgijau ne tik teorinių žinių, bet ir praktinių įgūdžių, ugdžiau savyje kruopštumą ir atsakingumą.</p><p id="9c098c58-d682-44d5-9acb-645ff977f273" class="">
+</p><nav id="0d981e9a-0e0c-4db0-ae4a-d7710035a375" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#c734cf65-3247-4674-91f4-41581d058f18">1. Olimpiados ir konkursai</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#c735eaa6-a871-4712-a902-63d6056cc581">1.1. Svarbiausi laimėjimai</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#86035ca4-c512-43d3-b11b-d35c3a80ff87">1.2. Svarbūs konkursai</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#e2049731-81e1-4db2-a9c5-c3d800fef29a">1.3. Kiti konkursai</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#ef7916a8-e588-48ed-872d-7d462418db8a">2. Projektinė veikla</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#15ba264b-6f84-4c4d-8e8e-da063e216443">2.1. Edukacinis žaidimai per anglų kalbos pamokas (III ir IV kl.)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#af3f6133-4035-4a50-907a-385b2b2af224">2.2. „Laimingas vanduo – Lietuvos gyvastis“ (II kl.)</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#f8f22258-a280-4f9a-bec2-1176adb0bd49">3. Filmų / video montavimas</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#317d12e2-90f4-4954-abd8-eec18e4faab5">3.1. Kaip Telšiai šventė Lietuvos šimtmetį</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#16153eb3-9055-4a96-8315-6e13d3390925">3.2. Klausimėlis: kas yra π (pi)? („Džiugo“ gimnazijos prisistatymas <em>Matematikos LIKe</em>)</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#242f4b02-be0d-48af-a9e0-a03939a70b54">3.3. 2018 metų Mamos dienai skirta akcija prie Masčio pakrantės</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#69df0f4c-2fa8-48fc-bcc8-625ebf7d9e92">3.4. Netradicinės literatūros pamokos Kaune: Jono Mačiulio - Maironio, Balio Sruogos, Salomėjos Nėries muziejai</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#fa0c88b8-2a7a-446f-a210-dd0161f4b2c4">3.5. Iš archyvo: Telšių „Džiugo“ (buvusi 5-oji) vidurinė mokykla 2004 m.</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#6a4ad417-4d49-436c-b04e-d7a6f3e43e34">3.6. Netradicinės pamokos apie Vytautą Mačernį, Šatrijos Raganą</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#cacc4f40-0edd-4802-a125-8daac76c6968">4. Bendradarbiavimas su gimnazijos prezidentūra ir mokytojais</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#ba1a89d6-2dda-46cc-b66e-36f22b825f1a">4.1. Prezidentūros logotipai</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#bdb1993f-0acb-4c5d-b4c4-fd5e44e69607">4.2. Plakatai ir kiti dizainai</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#876a061c-5d29-46bb-ae85-d092e8a7d366">5. Pagalba kitiems ir Edukamentas</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#6c624f5b-4851-41e2-95e8-817875171dbb">5.1. Edukamentas</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#071c2571-ae09-489b-af1e-d3966695b117">5.2. Projektai vieši ir prieinami visame pasaulyje</a></div></nav><p id="e3753e18-5035-4cdb-85a5-26ac6633913e" class="">
+</p><h2 id="c734cf65-3247-4674-91f4-41581d058f18" class="">1. Olimpiados ir konkursai</h2><p id="1db8f807-400c-452a-a78b-aad45cfe2a9a" class="">Pirmiausia, reikėtų paminėti anglų kalbos mokytoją I. Benikienę, kurios dėka per porą metų sugebėjau ne tik pagerinti anglų kalbos žinias, bet dalyvauti konkursuose, kurie padėjo man atrasti save ir įgyti pasitikėjimo savimi ir kitose srityse. Be šios mokytojos nemanau, kad būčiau toks, koks aš esu šiandien.</p><p id="324e5e0d-38ef-4058-8a0c-2eb01d9ccc55" class="">
+</p><p id="e6b3602c-6df9-47d4-b8f4-954506bf3ce1" class="">Mano pavardė gimnazijos pasiekimų puslapyje parašyta keturis kartus, tačiau dalyvavau tikrai daugiau nei keturiuose konkursuose.</p><figure id="00c136e0-5879-45f4-ba93-06fa204adc4c"><a href="https://www.dziugogimnazija.lt/veikla/pasiekimai/olimpiadu-nugaletojai/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://www.dziugogimnazija.lt/veikla/pasiekimai/olimpiadu-nugaletojai/</div></div></a></figure><p id="38ae864a-9e75-413d-bf04-7e50ace17c84" class="">
+</p><h3 id="c735eaa6-a871-4712-a902-63d6056cc581" class="">1.1. Svarbiausi laimėjimai</h3><p id="57ab0d71-6089-4e3d-ba13-2693bf2818ed" class="">Esu humanitarinių ir socialinių mokslų atstovas.</p><ul id="8a679905-e69b-4ec2-957d-0802d379b734" class="block-color-red_background bulleted-list"><li>II a kl. respublikinio <strong>anglų kalbos konkurso</strong> 9, 10 klasių mokiniams <strong>rajono etape užėmiau I vietą</strong>.<ul id="74e03b75-096a-40fc-8574-54a60741e69b" class="block-color-teal bulleted-list"><li>Lietuvoje užėmiau <em><strong>V vietą </strong></em><strong>(tai top 14 iš visų ~100 dalyvių).</strong></li></ul></li></ul><ul id="78d0d9b4-7ac3-4801-9b4b-12523cb05ea9" class="block-color-red_background bulleted-list"><li>III a kl. respublikinėje <strong>anglų kalbos olimpiadoje,</strong> skirta<strong>i </strong>11 klasių mokiniams <strong>taip pat rajono etape užėmiau I vietą</strong>.<ul id="b314f59f-4158-4f06-8a9f-1fc09bfff350" class="block-color-gray bulleted-list"><li>Turėjau vykti į Vilnių, bet tuo laikotarpiu sirgau ir negalėjau dalyvauti. </li></ul></li></ul><ul id="7b33a156-042a-4527-b7bd-36664ffc33e2" class="block-color-red_background bulleted-list"><li>III a kl. lietuvių kalbos ir literatūros olimpiados Lietuvos ir užsienio lietuviškų mokyklų mokiniams (9-12 klasių) <strong>mokyklos etape I vietą</strong>,<strong> rajono etape </strong><mark class="highlight-teal"><strong>užėmiau</strong></mark><mark class="highlight-teal"> </mark><mark class="highlight-teal"><strong>III vietą</strong></mark>.</li></ul><h3 id="86035ca4-c512-43d3-b11b-d35c3a80ff87" class="">1.2. Svarbūs konkursai</h3><ul id="14377064-e305-4631-aed4-e870095755d9" class="block-color-orange_background bulleted-list"><li>Savo noru dalyvavau <strong>respublikiniame anglų kalbos oratorių konkurse</strong> II klasėje.<blockquote id="be345c08-2f59-4b6d-bc2f-a7a5c35a65fa" class="">Kovo 16 d. IIa klasės gimnazistas Mantas Vilčinskas dalyvavo LCC Klaipėdos universitete vykusiame respublikiniame oratorių konkurse „Geriausias būdas nuspėti ateitį – ją išrasti“. 21-ą kartą organizuotame konkurse šiemet susirinko mokiniai ir juos ruošę mokytojai iš Klaipėdos, Vilniaus, Kauno, Šiaulių, Šilutės, Palangos, Plungės, Telšių ir Mažeikių.</blockquote><p id="1b0d7f4d-3fb3-4534-9186-4f6768fb0411" class="">Mano kalba (<em>The Digital You</em>, liet. <em>Skaitmeninis Tu</em>) gilinosi į tai, jog reikia skirti daugiau dėmesio sparčiai tobulėjančioms technologijoms, kurios gali būti naudingos, bet taip pat gali būti ir labai pavojingos. Pasidalinau patarimais, kaip apsisaugoti nuo kibernetinių pavojų ir prižiūrėti savo skaitmeninį identitetą.</p><figure id="752618a8-0f0d-4d71-977b-8a9b812a1518"><a href="https://mnts.lt/wrote/the-digital-you/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">The Digital You</div><div class="bookmark-description">This is the first ever speech I wrote in early 2018 (finished around March) for the 21st LCC National Public Speaking Competition that I attended. I memorized this speech, albeit not word by word. I was not a finalist, not too shabby for a first attempt. Had an exhilarating Friday nonetheless.</div></div><div class="bookmark-href"><img src="https://mnts.lt/favicon/favicon.ico?v=2" class="icon bookmark-icon"/>https://mnts.lt/wrote/the-digital-you/</div></div></a></figure></li></ul><ul id="57afe89f-9cda-4d82-bb80-0264df96ea88" class="block-color-orange_background bulleted-list"><li>III ir IV kl. dalyvavau <strong>anglų kalbos taisyklingos rašybos konkursų antruose turuose</strong>, tai amerikiečių tipo <strong><em>Spelling Bee</em></strong><em> </em>konkursas, kuris, beje, vyksta tik Žemaitijoje! Trumpai:<p id="2866d340-5950-4337-b030-d6fecdfc7e24" class="">Gimnazistai turėjo parašyti taisyklingai 30 žodžių iš 200 žodžių. Antrajame ture taip pat reikėjo atmintinai išmokti kitų, sunkesnių 200 žodžių rašybą, bet angliškus žodžius taisyklingai reikėjo ištarti paraidžiui prieš vertintojų komisiją, tai žymiai sunkiau.</p></li></ul><ul id="f10d3f74-e965-45d8-b4e5-e5537967cf62" class="block-color-orange_background bulleted-list"><li>III klasėje parašiau esė <em>The Right to Be Human</em> (liet. <em>Teisė būti žmogumi</em>), tema — <strong>žmogaus teisės, kokią reikšmę turi 1948 metų Visuotinė žmogaus teisių deklaracija? </strong>Konkursą organizavo JAV ambasada Lietuvoje.<strong> </strong><figure id="9d85505a-802b-47d0-99e9-c816e328dcfb"><a href="https://mnts.lt/wrote/the-right-to-be-human/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">The Right to be Human</div><div class="bookmark-description">This is an essay I wrote in October of 2018 for the Universal Declaration of Human Rights 70th Anniversary and its Lithuanian U.S. Embassy English Writing Competition. Yet again, I did not win anything, but had a great time writing this piece, originally over 1,000 words. The limit was 500.</div></div><div class="bookmark-href"><img src="https://mnts.lt/favicon/favicon.ico?v=2" class="icon bookmark-icon"/>https://mnts.lt/wrote/the-right-to-be-human/</div></div><img src="https://mnts.lt/img/og.png" class="bookmark-image"/></a></figure></li></ul><h3 id="e2049731-81e1-4db2-a9c5-c3d800fef29a" class="">1.3. Kiti konkursai</h3><ul id="2f0e91a9-7487-4dab-ba3f-e53e4ddfb254" class="block-color-blue_background bulleted-list"><li>Nuo 10 kl. dalyvauju beveik kiekviename anglų kalbos <a href="http://olympis.lt">Olympis.lt</a> konkurse. Mano visi rezultatai yra bent 90 procentų, todėl padėkos raštai sertifikuoti I laipsniu. Taip pat esu dalyvavęs ir Kings olimpiadoje, vykau į Šiaulius.</li></ul><p id="24236370-aaa6-41a8-8a14-e8d990103c52" class="">
+</p><p id="7ee3bf2f-f15a-4df2-852a-98439cf0b9b5" class="">Taip pat reikėtų paminėti šį punktą. Mano dalyvavimas „Matematikos LIKe“ apsiribojo su <a href="https://youtu.be/NZyf3HK4FpU">mokyklos prisistatymo video kūrimu</a>, bet tai buvo vis tiek svarbus darbus mokyklos komandai.</p><ul id="65653b4e-52e5-461e-9e15-6778b3dccc41" class="block-color-gray_background bulleted-list"><li>IIa kl. mokinių <strong>komanda </strong>(R.Gauronskis, K.Igarytė, K. Juodeikytė, R. Laurinavičiūtė, D. Makarovaitė, L. Ronkys, M. Vilčinskas) tarpmokykliniame <strong>10-tų klasių „Matematikos LIKe“ užėmė I vietą</strong>.</li></ul><p id="b7784aa3-a853-425c-9e65-788dca311e97" class="">
+</p><h2 id="ef7916a8-e588-48ed-872d-7d462418db8a" class="">2. Projektinė veikla</h2><h3 id="15ba264b-6f84-4c4d-8e8e-da063e216443" class="">2.1. Edukacinis žaidimai per anglų kalbos pamokas (III ir IV kl.)</h3><p id="9abdd7f5-2f07-43e0-8e6d-18039a533194" class="">Šiuo darbu labai didžiuojuosi. Tai Jungtinės Karalystės TV laidos žaidimas — <em>Who Wants to Be a Millionaire?</em> (liet. <em>Kas laimės milijoną?</em> / pažodžiui <em>Kas nori būti milijonierius?</em>), pritaikytas edukacijai. Šis projektas gali būti naudojamas kultūrinei - pažintinei veiklai, klausimai atskirti nuo žaidimo mechanikos. Kitaip tariant, galima 45 minutėms suorganizuoti žaidimą, kuris tarsi perkelia mokinius į televizijos studiją.</p><p id="15271bd9-83e7-4606-93ae-dc0da664fd8b" class="">Vienas žmogus žaidžia, o kiti žiūri, stebi. Žaidėjas turi atsakyti į 12 klausimų, laikas tiksi (kuo sunkesnis klausimas, tuo daugiau skiriama laiko). Taip pat galima pasinaudoti pagalba, jeigu žaidėjas nežino atsakymo. Gali:</p><ul id="5d0d1e15-d800-4d31-9b62-a795ab036336" class="bulleted-list"><li>pasiklausti visos klasės, kuri nubalsuos ir žaidėjas pamatys auditorijos atsakymus (A — 15%, B — 80%, C — 2%, D — 3% ir pan.);</li></ul><ul id="86ccb4c4-364a-4288-8291-4200ba059d55" class="bulleted-list"><li>panaikinti 2 neteisingus atsakymus, liks tik 2 teisingi atsakymai;</li></ul><ul id="f6ab8292-8c7e-483e-8934-81f54d316449" class="bulleted-list"><li>paprašyti draugo pagalbos;</li></ul><ul id="f70e5d13-afb0-40ad-bdb0-9da00265f38e" class="bulleted-list"><li>bandyti atsakyti du kartus.</li></ul><p id="2ed86bf5-1b93-4685-9921-3d209bdcf102" class="">Pirmą sykį žaidimas buvo išbandytas tik mokykloje tarp kelių klasių. Antrą sykį žaidimas buvo paviešintas eTwinning projekte. Jį žaidė ne tik mano gimnazijos mokiniai, bet ir kiti mokiniai kitose Europos šalyse.</p><p id="27d47efa-d6bf-4f48-8042-4908d9aff01c" class="">Žaidimas buvo sukurtas su <a href="https://github.com/mistermantas/millionaire-js">interneto (JavaScript) technologija React</a>.</p><div id="9484a9a8-8074-4985-beb8-55931cd78892" class="column-list"><div id="3b1eb69e-d66d-4a8f-9454-23f8760af493" style="width:50%" class="column"><figure id="ddcab4a0-4b94-4ee7-ac4b-be6e58ca3a77" class="image"><a href="Manto%20Vil%20insko%202016%202020%20met%20veiklos%20ataskaita%20ddcab4a04b944ee7ac4bbe6e58ca3a77/Untitled.png"><img style="width:1915px" src="Manto%20Vil%20insko%202016%202020%20met%20veiklos%20ataskaita%20ddcab4a04b944ee7ac4bbe6e58ca3a77/Untitled.png"/></a><figcaption>2017 m. — pirmas išbandymas prieš vasarą</figcaption></figure><p id="a7bf2b22-3345-40d4-96b9-bfeaefdf6707" class="">
+</p></div><div id="1472268f-2600-45ca-865e-fb79133d1c87" style="width:50%" class="column"><figure id="a4051201-9f69-4e4e-950c-b9bc94ecd45a" class="image"><a href="Manto%20Vil%20insko%202016%202020%20met%20veiklos%20ataskaita%20ddcab4a04b944ee7ac4bbe6e58ca3a77/Untitled%201.png"><img style="width:1920px" src="Manto%20Vil%20insko%202016%202020%20met%20veiklos%20ataskaita%20ddcab4a04b944ee7ac4bbe6e58ca3a77/Untitled%201.png"/></a><figcaption>2018 m. — pakeisti klausimai Europos dienai ir patobulinta išvaizda bei kiti mechanizmai</figcaption></figure></div></div><h3 id="af3f6133-4035-4a50-907a-385b2b2af224" class="">2.2. „Laimingas vanduo – Lietuvos gyvastis“ (II kl.)</h3><figure id="901b2a1f-16f5-404a-885b-eef260e78be7"><a href="https://laimingasvanduo.lt/laimingas-vanduo-lietuvos-gyvastis/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Laimingas vanduo - Lietuvos gyvastis</div><div class="bookmark-description">2017-09-18 Sveiki, mieli Vandens ir Žemės draugai ! Gimsta naujos gražios iniciatyvos !Pristatome projektą „LAIMINGAS VANDUO - LIETUVOS GYVASTIS&quot; Maloniai kviečiame Lietuvos ikimokyklinio, priešmokyklinio ugdymo įstaigų bendruomenes:vaikus, auklėtojus ir tėvus dalyvauti ekologiniame - kūrybiniame projekte. Jame, per įvairias pažintines ir kūrybines veiklas padėsime ugdyti vaikų pilietiškumą, saviraišką, plėsti kultūrinį akiratį ir ekologinį sąmoningumą, skatinti gamtai draugišką elgesį.</div></div><div class="bookmark-href"><img src="https://laimingasvanduo.lt/wp-content/uploads/2019/01/favicon.ico" class="icon bookmark-icon"/>https://laimingasvanduo.lt/laimingas-vanduo-lietuvos-gyvastis/</div></div><img src="https://laimingasvanduo.lt/wp-content/uploads/2019/03/LV-LG-2017-ok.jpg" class="bookmark-image"/></a></figure><p id="4049cbf8-2787-48a2-bac2-a493b3577fba" class="">Už šį projektą II kl. pabaigoje gavau direktoriaus padėkos raštą.</p><p id="be9af78d-aba8-4b37-a9b3-8efa79cfb739" class="">Šis projektas, vykdytas per visus mokslo metus, apėmė kelis mokomuosius dalykus: istoriją, chemiją, biologiją. Aš bendradarbiavau su klasės auklėtoja V. Urlovaite, o visa informacija dalinausi su projekto organizatore, taip pat užtikrinau, kad pateikiama informacija buvo pateikta estetiškai.</p><blockquote id="dc0d6f6f-2653-48a5-adc6-924fed463b43" class="">Anot Rimantė Černiauskaitės - Kėrienės, projekto „Laimingas vanduo - Lietuvos gyvastis“ koordinatorės, „jei visi taip darniai dirbtų Lietuvoje būtų tikrai kitoks gyvenimas [...] labai puikus pristatymas, tikrai daug nuveikėt ir pristatymas labai informatyvus ir neperkrautas. Jis puikus pavyzdys kitiems dalyviams, kaip galima dirbti. [...] tai yra jūsų ir jūsų mokytojų puikus darbas, kuriuo mokykla turėtų didžiuotis. Iš daugelio dalyvių tokių nuoseklių darbų yra nedaug. Jūs galite būti puikus pavyzdys net vilniečiams.“</blockquote><p id="d149f5ae-cfd0-4fa7-85a5-0ba52bcd8fd0" class="">Visus darbus galite peržiūrėti šioje nuorodoje:</p><figure id="6055016c-520c-44e2-a248-974903000ca0"><a href="https://drive.google.com/open?id=1So3pq7BDiwUIK49bd2CSpT9e9MaeIp-E" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Laimingas vanduo yra Telšių gyvastis - Google Drive</div></div><div class="bookmark-href"><img src="https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico" class="icon bookmark-icon"/>https://drive.google.com/open?id=1So3pq7BDiwUIK49bd2CSpT9e9MaeIp-E</div></div><img src="https://www.gstatic.com/images/branding/product/1x/drive_48dp.png" class="bookmark-image"/></a></figure><p id="367c2d29-631a-4c9d-9c4d-22acf6397830" class="">Veikla:</p><ul id="a8876fe6-1c7b-4247-bd0c-60c2f9b117fb" class="bulleted-list"><li>Masčio ežero pristatymas</li></ul><ul id="bfb25d3e-49da-4a7f-ba96-833ab9f32e2a" class="bulleted-list"><li>Solidarumo bėgimas, Bėgimas už laisvę akcijos</li></ul><ul id="9e15ef2e-1d80-4e46-affe-d614c9b473dc" class="bulleted-list"><li>Kalėdų ir Mamos dienos sveikinimai prie Masčio ežero pakrantės (žr. video)</li></ul><ul id="bdd69e20-7d86-4920-bc73-801c5395e635" class="bulleted-list"><li>Šimtmečio sveikinimas (žr. video)</li></ul><ul id="9072e333-4d66-4d5e-8e78-4b23ef696012" class="bulleted-list"><li>Nuotraukų konkursas „Vandens gyvybė“. Aš nusiunčiau 2 nuotraukos, o mano gerb. klasės draugė Agnė Balbošovaitė — dar vieną</li></ul><h2 id="f8f22258-a280-4f9a-bec2-1176adb0bd49" class="">3. Filmų / video montavimas</h2><p id="f9728ca6-632a-4b30-bc61-ae4ebb05d503" class="">Man atrodo, kad didžioji dalis žmonių mane pažįsta kaip informacinių technologijų specialistą arba kažką panašaus, nes technologijomis domiuosi nuo mažens. Tiesa, nesiekiu studijuoti informacines technologijas, man tai yra tik priemonė, kaip ir kalba.</p><p id="8c2795cf-b4e1-4b4e-ac1c-2665f7863680" class=""><strong>Per ketverius metus esu nufilmavęs, sumontavęs ir paviešinęs 7 video.</strong> Juos visus galite matyti čia, siūlau peržiūrėti:</p><figure id="b8b24088-9806-4d77-9954-fe045191c55f"><a href="https://www.youtube.com/playlist?list=PL19K6mHc1GbhJRylUkidmNXa4qGmeYXpU" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">📷 Telšių „Džiugo&quot; gimnazijoje sukurti filmai - YouTube</div></div><div class="bookmark-href"><img src="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico" class="icon bookmark-icon"/>https://www.youtube.com/playlist?list=PL19K6mHc1GbhJRylUkidmNXa4qGmeYXpU</div></div><img src="https://i.ytimg.com/vi/1EAkWfnzEow/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&amp;rs=AOn4CLBSrkf_ccKVye7n8eeM1YtEDGZelA" class="bookmark-image"/></a></figure><p id="6ba8e6d8-2712-4077-ad6b-135d4f24c62f" class="">
+</p><p id="711e504e-96c7-4471-a011-bdec42884fcf" class="">Aptarsiu kiekvieną video atskirai.</p><p id="ca169f8c-5752-492d-9497-b849e7c32ed2" class="">
+</p><div id="77a9acac-26f2-40a6-830a-63ba2362fd90" class="column-list"><div id="33153286-be69-40db-8c1b-99f65a793af4" style="width:31.25%" class="column"><figure id="f8368cd7-f165-4c9a-a7cf-3ce7ae4ae446"><div class="source"><a href="https://youtu.be/oKadopu-0y0">https://youtu.be/oKadopu-0y0</a></div></figure></div><div id="92e72ef4-04ef-40c5-9457-a11119a39b04" style="width:68.75%" class="column"><h3 id="317d12e2-90f4-4954-abd8-eec18e4faab5" class="">3.1. Kaip Telšiai šventė Lietuvos šimtmetį</h3><p id="2c5f5c15-c1d2-443b-a63b-cd22665e4bc3" class="">Tai mano pirmas trumpametražinis filmas, nieko panašaus anksčiau nebuvau daręs. Tiesą sakant, rezultatas gavosi pernelyg geras naujam išbandymui.</p><p id="720405f0-e4b3-4edd-9a99-dab20747c2e1" class="">Šį video sukūrė visa mano klasė, aš organizavau video montavimą ir siužetą. Svarbu paminėti, kad mano klasė bendradarbiavo su Telšių miesto gyventojais bei svečiais. Iki šiol manau, kad šis projektas liudija, kad aš sugebu susiburti į komandą ir sukurti kažką prasmingo.</p></div></div><div id="92cf5dc6-b120-45c8-88d5-fa35bd00bb31" class="column-list"><div id="f63d6cb9-65d6-4aab-a671-5e391f9c2e20" style="width:31.25%" class="column"><figure id="da0a2e50-4dfa-4907-bad5-529c44e71ae7"><div class="source"><a href="https://youtu.be/NZyf3HK4FpU">https://youtu.be/NZyf3HK4FpU</a></div></figure></div><div id="ae8c7de4-4d91-485e-a4da-be569997d4d1" style="width:68.75%" class="column"><h3 id="16153eb3-9055-4a96-8315-6e13d3390925" class="">3.2. Klausimėlis: kas yra π (pi)? („Džiugo“ gimnazijos prisistatymas <em>Matematikos LIKe</em>)</h3><p id="e78f5ef3-0da8-4ae0-ad76-b58b0f91edb0" class="">Šį video, kurį sukūriau su komandos pagalba, padėjo „Džiugo“ komandai laimėti I vietą.</p><ul id="bdaaf089-9d1e-4cc9-83ac-9004187e34c7" class="block-color-gray_background bulleted-list"><li>IIa kl. mokinių <strong>komanda </strong>(R.Gauronskis, K.Igarytė, K. Juodeikytė, R. Laurinavičiūtė, D. Makarovaitė, L. Ronkys, M. Vilčinskas) tarpmokykliniame <strong>10-tų klasių „Matematikos LIKe“ užėmė I vietą</strong>.</li></ul></div></div><div id="e71364b7-14c2-4201-a79f-b09fd661b681" class="column-list"><div id="b60af35f-9b38-43cd-811b-3b238722902e" style="width:31.25%" class="column"><figure id="4e6700b4-c867-444b-8559-99bb225a77eb"><div class="source"><a href="https://youtu.be/gHX4tY6mQdA">https://youtu.be/gHX4tY6mQdA</a></div></figure></div><div id="6fac0401-4eb8-4e80-bed8-78b8535e6dc3" style="width:68.75%" class="column"><h3 id="242f4b02-be0d-48af-a9e0-a03939a70b54" class="">3.3. 2018 metų Mamos dienai skirta akcija prie Masčio pakrantės</h3><p id="83cf945f-0054-4cd2-8308-80f5bb3f9bc1" class="">Labai graži akcija ir trumpas video, demonstruojantis, kaip vyko procesas, koks išėjo rezultatas. Įamžinta nuostabi akimirka, darbas, kuriuo gali didžiuotis kiekvienas telšiškis.</p></div></div><div id="705545ed-1485-4b6d-bf6f-a64fec04d04b" class="column-list"><div id="e5bb5419-9362-4456-aa5b-a03751f4c9a2" style="width:31.25%" class="column"><figure id="716a724f-5973-46f0-a6dd-c5ef2c414712"><div class="source"><a href="https://youtu.be/ABb3mqxZ5y4">https://youtu.be/ABb3mqxZ5y4</a></div></figure></div><div id="b2a52ce9-57cb-4835-af34-a08ccb674627" style="width:68.75%" class="column"><h3 id="69df0f4c-2fa8-48fc-bcc8-625ebf7d9e92" class="">3.4. Netradicinės literatūros pamokos Kaune: Jono Mačiulio - Maironio, Balio Sruogos, Salomėjos Nėries muziejai</h3><p id="c1c250cc-ffd7-47b0-ac41-ece75b07d85e" class="">Šis trumpametražis filmas (ir tai vadinu filmu, nes projektui įgyvendinti pastangų reikėjo nemažai) yra vienas iš didžiausių projektų, pavyzdžiui, filmą įgarsino keli žmonės, pasinaudojau ir pažįstamų pagalba.</p><p id="86c4f568-c97e-4c61-8e27-bd5af7350f7e" class="">Manau, kad filmo kokybė galėtų būti geresnė, bet tobulėjimas yra nuolatinis darbas ir nenutrūkstantis procesas.. </p></div></div><div id="01a17c59-d817-45a9-bcf2-e8a210763fcd" class="column-list"><div id="06bbdb15-3d6e-4df8-901c-18186cdcc8c7" style="width:31.25%" class="column"><figure id="94cdaced-4f7d-467e-9ba0-9b18f6118284"><div class="source"><a href="https://youtu.be/E4tJihlYyM8">https://youtu.be/E4tJihlYyM8</a></div></figure></div><div id="93252d27-e243-4add-a0e2-c0f019260842" style="width:68.75%" class="column"><h3 id="fa0c88b8-2a7a-446f-a210-dd0161f4b2c4" class="">3.5. Iš archyvo: Telšių „Džiugo“ (buvusi 5-oji) vidurinė mokykla 2004 m.</h3><p id="b178ab18-26b5-481e-92ed-7766e08dfdb2" class="">Šią idėją man padėjo realizuoti mano klasės auklėtoja ir istorijos mokytoja V. Urlovaitė, kurią irgi labai gerbiu kaip savo dalyko ekspertę.</p><p id="c0bda87a-f562-4882-9be0-1c7e385d8d4d" class="">Turėjau idėją sukurti dokumentinį filmą apie mokyklos istoriją, bet tai realizuoti nebuvo lengva, vėliau tapo neįmanoma dėl susiklosčiusių aplinkybių (karantinas nuo 2020-03-12), todėl idėjos teko atsisakyti..</p><p id="89c9d6e5-84a2-4537-8bea-2a70baedbc42" class="">Tačiau šis trumpametražinis filmas, ištrauktas iš archyvo, buvo viena dalis didelio projekto, negalėjau juo nepasidalinti, ypač dėl to, kad tą tiesiogine ta žodžio prasme turėjau ištraukti iš seno disko. Galima sakyti, kad filmas galėjo būti ir pamirštas, bet šiandien yra įamžintas viešoje ir lengvai prieinamoje erdvėje.</p></div></div><div id="69bbcdb4-65bb-43a6-877f-078cc3ecfe25" class="column-list"><div id="97e7eacc-83f8-4dcb-92d2-d3208c39931a" style="width:31.25%" class="column"><figure id="b7233573-a546-40ca-8a64-4b886740e24c"><div class="source"><a href="https://youtu.be/45bEMZ6jQyc">https://youtu.be/45bEMZ6jQyc</a></div></figure><figure id="5093a569-a822-4ad8-9ae9-b7dfaba597db"><div class="source"><a href="https://www.youtube.com/watch?v=1EAkWfnzEow&amp;list=PL19K6mHc1GbhJRylUkidmNXa4qGmeYXpU&amp;index=1">https://www.youtube.com/watch?v=1EAkWfnzEow&amp;list=PL19K6mHc1GbhJRylUkidmNXa4qGmeYXpU&amp;index=1</a></div></figure></div><div id="4dfc7db2-466a-4bc2-8ab9-09e01eedacf2" style="width:68.75%" class="column"><h3 id="6a4ad417-4d49-436c-b04e-d7a6f3e43e34" class="">3.6. Netradicinės pamokos apie Vytautą Mačernį, Šatrijos Raganą</h3><p id="f4f5f811-a6d2-4f38-9719-cdf31b69f0e4" class="">Pirmiausia, noriu padėkoti lietuvių kalbos ir literatūros mokytojai A. Ramančauskienei už savo darbą ir pastangas, be to, įkvėpimą, nes manau, kad be tokios mokytojos ir akademinės aplinkos tokie video iš esmės nebūtų neegzistavęs.</p><p id="47ff25a7-1c86-48b4-89e8-045acc825ebf" class="">Antra, kadangi vykome į ekskursiją, buvo puiki galimybė įamžinti akimirką ir pasidalinti gido žiniomis, kurių nėra vadovėlyje. Tai yra mokymo priemonė, kuri gali būti naudinga, netgi įdomi ir kitoms klasėms.</p><p id="192a1c6b-1efe-4cde-8edc-fecb2b142c59" class="">Beje, Šatrijos Raganos ekskursijos filmo gale — skaitovų prezentacija.</p><p id="6e6439c1-2a85-4a4a-b21f-cafd0221d853" class="">Su kiekvienu darbu tobulėju, lavinu įgūdžius. Mano vaizdų, garso takelių, apdorojimo ir apskritai montavimo procesas yra žymiai geresnis nei žemesnėse klasėse, nors netgi šiandien stebina tai, jog II klasėje sugebėjau per porą dienų sumontuoti visai neblogą video.</p></div></div><h2 id="cacc4f40-0edd-4802-a125-8daac76c6968" class="">4. Bendradarbiavimas su gimnazijos prezidentūra ir mokytojais</h2><p id="fae3e3f6-7bfd-46ef-afbf-2f5e48ac6696" class="">Kai kurie įvardija mane kaip socialiai neaktyvų. Tai man atrodo absurdiška. Šiuo atveju norėčiau atkreipti dėmesį į tai, jog man svarbi kokybė, o ne kiekybė.</p><h3 id="ba1a89d6-2dda-46cc-b66e-36f22b825f1a" class="">4.1. Prezidentūros logotipai</h3><p id="838d4aaf-1dc4-4b47-a531-a44f57924671" class="">III ir IV klasėje sukūriau logotipus mokyklos prezidentėms Gabijai Kalinauskytei (su kuria ir šiandien bendradarbiauju) ir Ievai Jankauskaitei. Vadinasi, kad paskutinės 2 prezidentūros pasinaudojo mano paslaugomis.</p><div id="486582bb-4e0f-42f9-ae0e-6da37fa42965" class="column-list"><div id="64518d70-97e5-4bc8-8ec7-6479df6908eb" style="width:50%" class="column"><figure id="81e1e24b-6c48-46e9-b9b8-095d65303cf6" class="image"><a href="Manto%20Vil%20insko%202016%202020%20met%20veiklos%20ataskaita%20ddcab4a04b944ee7ac4bbe6e58ca3a77/Untitled%202.png"><img style="width:3600px" src="Manto%20Vil%20insko%202016%202020%20met%20veiklos%20ataskaita%20ddcab4a04b944ee7ac4bbe6e58ca3a77/Untitled%202.png"/></a></figure><p id="16595109-e045-4b38-ac54-aa6c71b20452" class="">Padidinus vaizdą, XVII gimnazijos prezidentūros logotipo fone matosi vaizdas, panašus į smėlį.</p></div><div id="bfdcf7aa-2de4-4d09-840f-6a7c181a9c25" style="width:50.00000000000002%" class="column"><figure id="3131596d-2bf8-484c-9692-58073ad4f63a" class="image"><a href="Manto%20Vil%20insko%202016%202020%20met%20veiklos%20ataskaita%20ddcab4a04b944ee7ac4bbe6e58ca3a77/Untitled%203.png"><img style="width:2000px" src="Manto%20Vil%20insko%202016%202020%20met%20veiklos%20ataskaita%20ddcab4a04b944ee7ac4bbe6e58ca3a77/Untitled%203.png"/></a></figure><p id="974e31a0-69f7-47a7-bd5d-e6f67cb068b1" class="">Taip pat XVI gimnazijos prezidentūros logotipe galite rasti rasti subtilių topografinių išraižymų, jie labiausiai pastebimi prie kraštų.  </p></div></div><p id="bab6a674-6402-43f5-a285-72d3776dd11b" class="">Ši prezidentūros atributika nebuvo sukurta per keletą minučių, tai truko kelias dienas planavimo ir įvairių eksperimentų, galutinis rezultatas buvo atrinktas, atsižvelgiant į svarbius dizaino principus, pavyzdžiui, kontrastą, detales.</p><h3 id="bdb1993f-0acb-4c5d-b4c4-fd5e44e69607" class="">4.2. Plakatai ir kiti dizainai</h3><p id="bf258a2a-3049-4ede-9b69-f793a20f98d4" class="">Mokyklai esu sukūręs:</p><ul id="86fc11fc-ba8b-4aa3-9dd9-729edfd0ffa1" class="bulleted-list"><li><a href="https://dribbble.com/shots/5942198-School-Prom-Special-Event-Invite-Lithuanian-imtadienis">2019 metų Šimtadienio kvietimą</a>;</li></ul><ul id="6c25644f-3223-4ef4-8626-ea1a3432355b" class="bulleted-list"><li><a href="https://mnts.lt/lt/portfolio/chem2art/">eTwinning anglų kalbos - chemijos projekto </a><a href="https://mnts.lt/lt/portfolio/chem2art/"><em>From Chemistry to Fine Art</em></a><a href="https://mnts.lt/lt/portfolio/chem2art/"> (liet. Nuo chemijos iki vaizduojamo meno) logotipą;</a></li></ul><ul id="29e1be58-f794-4827-82fd-19353d2a3ba4" class="bulleted-list"><li><a href="https://dribbble.com/shots/7834880-Truth-or-Fake-Concept-Logo-for-eTwinning-Project">eTwinning anglų kalbos projekto </a><a href="https://dribbble.com/shots/7834880-Truth-or-Fake-Concept-Logo-for-eTwinning-Project"><em>Truth or Fake?</em></a><a href="https://dribbble.com/shots/7834880-Truth-or-Fake-Concept-Logo-for-eTwinning-Project"> (liet. </a><em><a href="https://dribbble.com/shots/7834880-Truth-or-Fake-Concept-Logo-for-eTwinning-Project">Tiesa ar melas?</a></em><a href="https://dribbble.com/shots/7834880-Truth-or-Fake-Concept-Logo-for-eTwinning-Project">) logotipą</a>;</li></ul><ul id="9230c2f8-d87d-4471-b9f5-47886b69822b" class="bulleted-list"><li><a href="https://www.figma.com/file/H1WMmrP7oC337e3BUq6xFKLg/School-Christening-Poster-Contest-I-Won?node-id=0%3A1">2017 metų pirmokų krikštynų plakatą</a>;</li></ul><ul id="b60d8ea8-c37d-467a-8953-30ef95463e86" class="bulleted-list"><li>daugelį kitų estetiškų darbų <a href="https://www.figma.com/file/YJQOPVglrDgHJJigBFQe8BxE/School-Arts-and-Crafts-Makeshift-Poster?node-id=0%3A1">technologijų</a>, <a href="https://cdn.edukamentas.lt/geo/kiwcuhuotwmike7glmco.pdf">geografijos</a>, <a href="https://www.figma.com/file/IuCPr2te7BZyGbCzViK1UfyJ/Dail%C4%97?node-id=0%3A1">dailės</a> ir kitoms pamokoms;</li></ul><ul id="a501293e-1894-4294-b495-95aa9635a52b" class="bulleted-list"><li>ir anksčiau minėtą prezidentūros atributiką.</li></ul><p id="4830f8f5-0e9a-4064-9c70-a779afb156f3" class="">Turiu meninių gebėjimų, mėgstu kurti ir kruopščiai atlikti sumanytą darbą, taigi, idėjas realizuoju savo darbuose.</p><h2 id="876a061c-5d29-46bb-ae85-d092e8a7d366" class="">5. Pagalba kitiems ir Edukamentas</h2><p id="75f83c03-d6f7-4da2-bf2b-f60642af1fb2" class="">Kitose skiltyse paminėjau darbus, kurie susiję su mokykla. Galiausiai, noriu atkreipti dėmesį į kitas veiklas, kurios nėra tiesiogiai susijusios su mokykla, bet vis tiek yra svarbios bendrame kontekste.</p><h3 id="6c624f5b-4851-41e2-95e8-817875171dbb" class="">5.1. Edukamentas</h3><p id="54ab04dc-b4b2-4c47-b649-b0119ef00531" class=""><a href="http://edukamentas.lt/">Edukamentas.lt</a> – tinklalapis, kurį sukūriau mokslo metų pradžioje. Prie projekto įgyvendinimo prisidėjo ne tik gimnazijos mokytojų kuriama akademiška aplinka, bet ir mano buvusi auklėtoja, teta, lietuvių kalbos ir literatūros mokytoja I. Tarvainienė. Manau, kad užtenka vieno mokytojo, kuris parodytų gerą pavyzdį ir įkvėptų tobulėti, o mano gimnazijoje tokių mokytojų nemažai.</p><p id="b3f81524-d1c4-4a52-a9a7-8d805db80be6" class="">Čia aš (praktiškai vienintelis) dalinuosi konspektais, šaltiniais (pristatymais, tekstais, audio knygomis, PDF failais) bei kita informacija, kuri pateikiama lengvai prieinamoje formoje gimnazistams, taip pat šią platformą naudoja ir mokytojai.</p><p id="b7eb509d-3e58-4665-99a2-0da3e3f62a5e" class="">
+</p><p id="ec8aed05-46c9-4102-acfe-4c265c8eb780" class="">Esu girdėjęs, jog ir gimnazijoje naudojamasi šia platforma, tai teigė mano klasės draugai ir Gabija Kalinauskytė, su kuria, kaip minėjau anksčiau, susitariu ir gerbiu.</p><p id="efe6f51d-026e-4298-ad0a-2ab7d29895c8" class="">
+</p><p id="75e45ebe-9e4b-4850-a245-29b140e37c26" class="">Šis projektas prasidėjo nuo labai mažų dalykų ir išaugo į didžiulį darbą. Jis naudojamas visoje Lietuvoje. Anot naujausių mano duomenų,</p><ul id="440fd3c5-87d1-4a74-96a5-dfba2f96a44f" class="bulleted-list"><li>nuo kovo 5 d. iki kovo 11 d. — per 7 dienos — tinklalapiu naudojosi 5 tūkstančiai lankytojų, iš viso apsilankę 6,8 tūkst. kartų (nes kai kurie atsidaro puslapį kelis kartus per dieną).</li></ul><ul id="d854bd7c-8a57-4e79-9f87-8997ad449d6c" class="bulleted-list"><li>didžioji dalis lankytojų suranda Edukamentą per Google paiešką, o populiariausios skiltys — literatūra ir biologija. Galiu padaryti išvadą: jeigu mokiniai kažko nesupranta, ieško informacijos, kuri padėtų tą dalyką suprasti.</li></ul><ul id="d63a8d1f-bbd0-41f1-adce-0261808902fc" class="bulleted-list"><li>Projektą finansiškai remia 5 žmonės (mokiniai ir mokytojai).</li></ul><p id="afd23bf5-38e8-4986-99fa-a6dc68eff900" class="">
+</p><p id="0c10a59e-6d4e-452a-b3fa-bb097aaae60a" class="">Naudoju <a href="https://www.instagram.com/p/B-fRx52CI61/">Edukamentą socialiniuose tinkluose</a> kaip įrankį, su kuriuo galiu skleisti informaciją, mintis, kurias, manau, reikia išgirsti visiems. Geriausias pavyzdys — <a href="https://www.edukamentas.lt/wiki/gyvenimas/karantinas/">įrašas apie karantiną</a>, kuriame akcentuoju, į ką reikia atkreipti dėmesį per karantiną, kad nesužlugtų mūsų vidinis pasaulis.</p><p id="4765c284-77f7-44f3-8540-04cf43461488" class="">
+</p><h3 id="071c2571-ae09-489b-af1e-d3966695b117" class="">5.2. Projektai vieši ir prieinami visame pasaulyje</h3><p id="55c30ea1-af13-4ed6-af54-a85ff2bdfc59" class="">Beveik visi darbai, kuriuos paminėjau, yra viešai skelbiami. Prisidedu prie gimnazijos populiarinimo ne tik rajone, bet ir visoje Lietuvoje.</p><p id="a8313aac-0bff-49a9-9048-76ba6c22ce45" class="">Tuo tarpu anksčiau minėtas edukacinis žaidimas, sukurtas anglų kalbos pamokai, yra viešai prieinamas ir juo gali pasinaudoti ir kitos mokyklos Lietuvoje. Savo darbais prisidedu kaip savanoris prie augančios ne pelno siekiančios programuotojų bendruomenės, dalyvauju kasmetiniuose projektuose kaip <em>Hacktoberfest</em>, todėl galiu pasigirsti ir simbolinėmis dovanėlėmis iš projekto organizatorių.</p><p id="9d8d8dd4-cc81-4598-aabc-957080902cdf" class="">
+</p><hr id="d763c669-3a95-4270-b455-5a8cb91280dd"/><p id="419984e1-395e-4c90-9d17-6220bbd290e1" class="">
+</p><p id="5e5d9a58-640c-45b0-a555-ae4fc41c343c" class="">Apibendrindamas galiu teigti, kad akademiška aplinka įkvėpė mane daryti daugiau. Esu tos nuomonės, kad galiu pasidalinti savo žiniomis su kitais, o kai kada ir suteikti pagalbą. Esu dėkingas už viską, ką man per šiuos ketverius metus padėjo atrasti mokyklos bendruomenė, o svarbiausia – pasitikėjimą savimi.</p></div></article></body></html>
